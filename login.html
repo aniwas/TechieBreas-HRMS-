@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techiebears</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/2edfbc5391.js"crossorigin="anonymous"></script>
+    
+</head>
+<body>
+   <div class="page">
+       <div class="navbar">
+           <img src="images/techbear.jpg" class="logo">
+           <h1>Techie<span style="font-family: 'Merienda', cursive;
+            color:rgb(20, 76, 80);">Bears</span></h1>
+           <nav>
+               <ul>
+                   <li><a href=""class="active">Home</a></li>
+                   <li><a href="#rules">Rules & Regulations</a></li>
+                </ul>
+            </nav>
+            <a href="Adminlogin.php" class="btn">Admin Login</a>
+       </div>
+       <div class="row">
+        <div class="col-1">
+             <img src="images/techbear.jpg" >
+        </div>
+        <div class="col-2">
+           <div class="form-container">
+               <div class="form-btn">
+                   <span onclick="login()">Login</span>
+                   <span onclick="register()">Register</span>
+                   <hr id="indicator">
+                </div>
+                <form action="login.php" method="POST" id="Loginform">
+                    
+                    <button type="submit" class="btn-losi">Login</button><br>
+                    
+                    
+                </form>
+                <form action="register.php" method="POST" id="Regform">
+                   
+                    <button type="submit" class="btn-losi" >Register Now</button>
+                </form>
+
+           </div>
+             
+        </div>
+    </div>
+   </div>
+   <hr>
+   <div id="rules">
+       <h1>Rules and Regulations</h1>
+       <hr>
+       
+        <li>Rule No.1</li>  
+        <li>Rule No.2</li>
+        <li>Rule No.3</li>
+        <li>Rule No.4</li>
+        <li>Rule No.5</li> 
+        <li>Rule No.6</li> 
+        <li>Rule No.7</li> 
+        <li>Rule No.8</li>
+        <li>Rule No.9</li>
+        <li>Rule No.10</li>   
+    </div>
+    <!-- footer code -->
+    <hr>
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>About Us</h2>
+                <div class="content">
+                    <p>
+                        Techie Bears.
+                    </p>
+                </div>
+            </div>
+            <div class="center box adjust">
+                <div class="cen">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="login.html">Home</a></li>
+                        <li><a href="#Loginform">Login</a></li>
+                        <li><a href="#rules">Rules and Regulations</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="right box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Munisuvarat,kamatghar,bhiwandi(W)</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+91 7977756352</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">aniwas111@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <h3>Copyright @2024|Designed with HTML,CSS,PHP.</h3>
+        </div>
+    </footer>
+   <script>
+       var Loginform=document.getElementById("Loginform")
+       var Regform=document.getElementById("Regform")
+       var indicator=document.getElementById("indicator")
+
+         function register(){
+            Regform.style.transform= "translateX(0px)";
+            Loginform.style.transform= "translateX(0px)";
+            indicator.style.transform= "translateX(80px)";
+
+         }
+         function login(){
+            Regform.style.transform= "translateX(300px)";
+            Loginform.style.transform= "translateX(300px)";
+            indicator.style.transform= "translateX(0px)";
+
+         }
+         
+   </script>
+</body>
+</html>
